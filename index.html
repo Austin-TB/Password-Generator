@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Password Generator</h1>
+        <div id="password-section">
+            <input type="text" id="password" readonly>
+            <button id="copy"></button>
+        </div>
+        <div id="range">
+            <input type="range" id="length" min="4" max="20" value="8">
+            <label for="length">Password Length: <span></span></label>
+        </div>
+        <div id="checkboxes">
+            <div>
+                <input type="checkbox" id="numbers" checked>
+                <label for="uppercase">Numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="letters" checked>
+                <label for="lowercase">Letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mixedcase" checked>
+                <label for="numbers">Mixed Case</label>
+            </div>
+            <div>
+                <input type="checkbox" id="punctuation">
+                <label for="symbols">Punctuation</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
